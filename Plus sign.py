@@ -26,8 +26,9 @@ gameDisplay = pygame.display.set_mode((800,600))
 gameDisplay.fill(black)
 
 # 400 300
-pygame.draw.line(gameDisplay, red, (395, 300), (405, 300), 10)
-pygame.draw.line(gameDisplay, green, (400, 295), (400, 305), 10)
+pygame.draw.line(gameDisplay, red, (0, 300), (800, 300), 10)
+pygame.draw.line(gameDisplay, green, (400, 0), (400, 600), 10)
+
 
 # main application loop
 run = True
@@ -40,7 +41,7 @@ while run:
             run = False
 
     # update the display
-    pygame.display.flip()
+    pygame.display.update()
 
 pygame.quit()
 exit()
