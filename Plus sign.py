@@ -26,8 +26,8 @@ gameDisplay = pygame.display.set_mode((800,600))
 gameDisplay.fill(black)
 
 # 400 300
-pygame.draw.line(gameDisplay, red, (0, 300), (800, 300), 10)
-pygame.draw.line(gameDisplay, green, (400, 0), (400, 600), 10)
+pygame.draw.line(gameDisplay, red, (0, 300), (800, 300), 1)
+pygame.draw.line(gameDisplay, green, (400, 0), (400, 600), 1)
 
 
 # main application loop
