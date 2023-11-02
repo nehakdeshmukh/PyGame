@@ -33,7 +33,7 @@ pixAr = pygame.PixelArray(gameDisplay)
 for i in range(0,800):
     for j in range(0,600):
         pixAr[i][300] = red
-        
+        pixAr[400][j] = green
         
 # main application loop
 run = True
