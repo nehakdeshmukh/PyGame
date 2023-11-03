@@ -38,7 +38,7 @@ for i in range(0,800):
 
 for i in range(0,800):
     pixAr[i][i] = green
-    pixAr[800-1-i][i] = green
+    pixAr[799-i][i] = green
              
 
 # main application loop
