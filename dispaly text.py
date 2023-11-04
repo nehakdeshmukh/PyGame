@@ -42,7 +42,7 @@ print('system font :', sysfont)
 
 # create a font object.
 # font file size of the font
-font = pygame.font.Font(sysfont, 15)
+font = pygame.font.Font(sysfont, 25)
 
 
 
