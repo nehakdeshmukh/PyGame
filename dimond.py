@@ -36,11 +36,16 @@ for i in range(0,800):
     pixAr[i][400] = red
     pixAr[400][i] = red
     
+for i in range(0,400):
+        pixAr[400-1-i][i+1] = white
+        pixAr[400+i][i+1] = white
+        # pixAr[400-1-i][i+1] = white
+        # pixAr[400-1-i][i+1] = white
 
-pygame.draw.line(gameDisplay, white, (0, 400), (400, 0), 1)
-pygame.draw.line(gameDisplay, white, (0, 400), (400, 800), 1)
-pygame.draw.line(gameDisplay, white, (800, 400), (400, 0), 1)
-pygame.draw.line(gameDisplay, white, (800, 400), (400, 800), 1)
+# pygame.draw.line(gameDisplay, white, (0, 400), (400, 0), 1)
+# pygame.draw.line(gameDisplay, white, (0, 400), (400, 800), 1)
+# pygame.draw.line(gameDisplay, white, (800, 400), (400, 0), 1)
+# pygame.draw.line(gameDisplay, white, (800, 400), (400, 800), 1)
 
 # main application loop
 run = True
