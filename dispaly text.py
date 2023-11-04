@@ -57,7 +57,7 @@ textRect = text.get_rect()
 
 
 # set the center of the rectangular object.
-# textRect.center = (X // 2, Y // 2)
+textRect.center = (X // 2, Y // 2)
 
 # main application loop
 run = True
