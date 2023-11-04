@@ -40,7 +40,7 @@ for i in range(0,400):
         pixAr[400-1-i][i+1] = white
         pixAr[400+i][i+1] = white
         pixAr[i][400+i] = white
-        
+        pixAr[800-1-i][400+i] = white
 
 # pygame.draw.line(gameDisplay, white, (0, 400), (400, 0), 1)
 # pygame.draw.line(gameDisplay, white, (0, 400), (400, 800), 1)
