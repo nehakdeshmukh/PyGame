@@ -49,7 +49,7 @@ def plot_text(p,q):
     gamedisplay.blit(text, textRect)
     
 
-
+plot_text(50,50)  
 
 # main application loop
 run = True
