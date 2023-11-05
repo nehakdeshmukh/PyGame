@@ -40,7 +40,16 @@ def plot_point(p,q):
     pixAr[(X//2)+p][(Y//2)+q] = red
     
     
-plot_point(10, 10)
+def plot_text(p,q):
+    text = font.render('({},{})'.format(p,q), True, blue)
+    textRect = text.get_rect()
+    textRect.center = ((X//2)+p, (Y//2)+q)
+    plot_point(p, q)
+    pixAr.close()
+    gamedisplay.blit(text, textRect)
+    
+
+
 
 # main application loop
 run = True
