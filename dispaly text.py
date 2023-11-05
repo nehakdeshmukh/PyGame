@@ -21,7 +21,6 @@ red = (255,0,0)
 green = (0,255,0)
 blue = (0,0,255)
 
-
 # assigning values to X and Y variable
 X = 800
 Y = 800
@@ -32,10 +31,8 @@ gameDisplay = pygame.display.set_mode((X,Y))
 # filling display with colour black
 gameDisplay.fill(black)
 
-
 # set the pygame window name
 pygame.display.set_caption('Show Text')
-
 
 sysfont = pygame.font.get_default_font()
 print('system font :', sysfont)
@@ -44,27 +41,23 @@ print('system font :', sysfont)
 # font file size of the font
 font = pygame.font.Font(sysfont, 25)
 
-
-
 # create a text surface object,
 # on which text is drawn on it.
 text = font.render('(0,0)', True, green)
-
 
 # create a rectangular object for the
 # text surface object
 textRect = text.get_rect()
 
-
 # set the center of the rectangular object.
 textRect.center = (X // 2, Y // 2)
+
+gameDisplay.blit(text, textRect)    
 
 # main application loop
 run = True
 while run:
     clock.tick(60)
-
-    gameDisplay.blit(text, textRect)    
 
     # event loop
     for event in pygame.event.get():
