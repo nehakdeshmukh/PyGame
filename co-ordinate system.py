@@ -38,7 +38,29 @@ for i in range(0,X):
         pixAr[Y//2][j] = green
        
 
-
+def position(a,b,X,Y):
+    if((a>0) and (b>0)):
+        print("inside ++")
+        pos = ((X//2)+a, (Y//2)-b)
+        return a,-b,pos # 1st 
+    
+    elif((a<0) and (b>0)):
+        print("inside -+")
+        pos = ((X//2)+a, (Y//2)-b)
+        return a,-b,pos # 2nd 
+    
+    elif((a<0) and (b<0)):
+        print("inside --")
+        pos = ((X//2)+a, (Y//2)-b)
+        return a,-b,pos
+    
+    elif((a>0) and (b<0)):
+        print("inside +-")
+        pos = ((X//2)+a, (Y//2)-b)
+        return a,-b,pos
+    
+    pos = ((X//2)+(a), (Y//2)+(b))
+    return a,b,pos
 
 
 # main application loop
