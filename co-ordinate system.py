@@ -62,6 +62,11 @@ def position(a,b,X,Y):
     pos = ((X//2)+(a), (Y//2)+(b))
     return a,b,pos
 
+def plot_point(p,q):
+    pixAr[(X//2)+p][(Y//2)+q] = red
+    
+
+
 
 # main application loop
 run = True
