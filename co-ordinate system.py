@@ -76,6 +76,19 @@ def plot_text(p,q,X,Y):
     return text,textRect
 
 
+t2,tr2 = plot_text(50,-50,X,Y)  
+t3,tr3 = plot_text(-50,50,X,Y)  
+t4,tr4 = plot_text(-50,-50,X,Y)  
+t1,tr1 = plot_text(50,50,X,Y)  
+t,tr = plot_text(0,0,X,Y)  
+pixAr.close()
+gamedisplay.blit(t, tr)
+gamedisplay.blit(t1, tr1)
+gamedisplay.blit(t2, tr2)
+gamedisplay.blit(t3, tr3)
+gamedisplay.blit(t4, tr4)
+
+
 # main application loop
 run = True
 while run:
