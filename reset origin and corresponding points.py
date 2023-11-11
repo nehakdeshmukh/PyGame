@@ -41,6 +41,37 @@ def setup_origin(p=None,q=None):
     print(X,Y)
     return X,Y
 
+p,q = setup_origin(400,788)
+
+for i in range(0,X):
+    for j in range(0,Y):
+        pixAr[p][i] = green
+        pixAr[j][q] = green
+       
+def position(a,b,p,q):
+    if((a>0) and (b>0)): 
+        print("inside ++")
+        pos = (p+a, q-b) 
+        return a,-b,pos 
+    
+    elif((a<0) and (b>0)):
+        print("inside -+")
+        pos = (p+a, q-b)
+        return a,-b,pos 
+    
+    elif((a<0) and (b<0)):
+        print("inside --")
+        pos = (p+a, q-b)
+        return a,-b,pos
+    
+    elif((a>0) and (b<0)):
+        print("inside +-")
+        pos = (p+a, q-b)
+        return a,-b,pos
+    
+    pos = (p+a, q+b)
+    return a,b,pos
+
 # main application loop
 run = True
 while run:
