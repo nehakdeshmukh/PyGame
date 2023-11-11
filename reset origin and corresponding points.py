@@ -31,7 +31,15 @@ font = pygame.font.Font(sysfont, 15)
 
 pixAr = pygame.PixelArray(gamedisplay)
 
-
+def setup_origin(p=None,q=None):
+    if (p and q):
+        X=p
+        Y=q
+    else:
+        X=p//2
+        Y=q//2
+    print(X,Y)
+    return X,Y
 
 # main application loop
 run = True
