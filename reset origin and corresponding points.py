@@ -72,6 +72,10 @@ def position(a,b,p,q):
     pos = (p+a, q+b)
     return a,b,pos
 
+def plot_point(v,w):
+    pixAr[p+v][q+w] = red
+    
+    
 # main application loop
 run = True
 while run:
