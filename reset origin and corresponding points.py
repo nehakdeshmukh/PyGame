@@ -85,7 +85,16 @@ def plot_text(c,d,p,q):
     plot_point(l,m)
     return text,textRect    
 
-    
+t2,tr2 = plot_text(100,-50,p,q)  
+t3,tr3 = plot_text(-100,50,p,q)  
+t4,tr4 = plot_text(-100,-50,p,q)  
+t1,tr1 = plot_text(100,50,p,q)  
+t,tr = plot_text(0,0,p,q)  
+pixAr.close()
+
+
+
+
 # main application loop
 run = True
 while run:
