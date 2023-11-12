@@ -92,7 +92,11 @@ t1,tr1 = plot_text(100,50,p,q)
 t,tr = plot_text(0,0,p,q)  
 pixAr.close()
 
-
+gamedisplay.blit(t, tr)
+gamedisplay.blit(t1, tr1)
+gamedisplay.blit(t2, tr2)
+gamedisplay.blit(t3, tr3)
+gamedisplay.blit(t4, tr4)
 
 
 # main application loop
