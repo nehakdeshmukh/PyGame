@@ -75,6 +75,16 @@ def position(a,b,p,q):
 def plot_point(v,w):
     pixAr[p+v][q+w] = red
     
+def plot_text(c,d,p,q):
+    print(c,d) 
+    l,m,pos = position(c,d,p,q) 
+    print(l,m,pos)
+    text = font.render('({},{})'.format(c,d), True, white)
+    textRect = text.get_rect()
+    textRect.center = pos
+    plot_point(l,m)
+    return text,textRect    
+
     
 # main application loop
 run = True
