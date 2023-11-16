@@ -41,7 +41,7 @@ def setup_origin(p=None,q=None):
     print(X,Y)
     return X,Y
 
-p,q = setup_origin(400,788)
+p,q = setup_origin(400,600)
 
 for i in range(0,X):
     for j in range(0,Y):
