@@ -48,6 +48,8 @@ while run:
     rect.x += (keys[pygame.K_RIGHT] - keys[pygame.K_LEFT]) * vel
     rect.y += (keys[pygame.K_DOWN] - keys[pygame.K_UP]) * vel
         
+    rect.centerx = rect.centerx % gamedisplay.get_width()
+    rect.centery = rect.centery % gamedisplay.get_height()
     
     gamedisplay.fill(0)
     pygame.draw.rect(gamedisplay, (255, 0, 0), rect)
